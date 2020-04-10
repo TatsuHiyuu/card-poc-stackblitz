@@ -1,11 +1,10 @@
-<img src="card/Celliera.png"/>
 <div *ngFor="let card of cards">
   <app-card 
     [name]="card.name"
     [might]="card.might"
     [description]="card.description"
     [image]="card.image"
+    [position]="card.position"
   >
   </app-card>
-  <img src={{card.image}}>
 </div>

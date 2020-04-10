@@ -1,6 +1,8 @@
-<div class="card" [style.background]="'url(../assets/card/' + image +')'">
-  <p>{{ name }}</p>
-  <p>{{ might }}</p>
-  <p>{{ description }}</p>
-  <p>{{ image }}</p>
+<div class="card" 
+  [style.background-image]="'url(' + image +')'"
+  [style.background-position]="position"
+>
+  <app-box-title [text]="name"></app-box-title>
+  <app-box [text]="'Might: ' + might"></app-box>
+  <!-- <div class="description">{{ description }}</div> -->
 </div>

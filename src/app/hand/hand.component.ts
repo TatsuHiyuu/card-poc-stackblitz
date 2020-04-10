@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CardComponent } from '../card/card.component';
+import { cards } from '../data/cards';
 
 @Component({
   selector: 'app-hand',
@@ -7,7 +7,7 @@ import { CardComponent } from '../card/card.component';
   styleUrls: ['./hand.component.css']
 })
 export class HandComponent implements OnInit {
-  cards = CardComponent;
+  cards = cards;
 
   constructor() { }
 

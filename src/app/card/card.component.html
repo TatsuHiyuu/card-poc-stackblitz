@@ -1,8 +1,6 @@
-<p>
-card works!
-</p>
-
-<div class="card" [ngStyle]="{ 'background-image': 'url(' + image + ')'}">Test
-  <div class="card-face"></div>
-  <div class="card-label"></div>
+<div class="card" [style.background]="'url(../assets/card/' + image +')'">
+  <p>{{ name }}</p>
+  <p>{{ might }}</p>
+  <p>{{ description }}</p>
+  <p>{{ image }}</p>
 </div>

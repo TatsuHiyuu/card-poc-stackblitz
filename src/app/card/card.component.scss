@@ -1,7 +1,16 @@
 .card {
-  width: 175px;
-  height: 250px;
+  width: 200px;
+  height: 300px;
   border: 0.1em solid #000;
   border-radius: 1em;
   padding: 1em;
+
+  .title {
+      width: 150px;
+      height: 100px;
+      transform: skew(10deg);
+      //background: red;
+      border: 0.1em solid #000;
+  }
 }
+

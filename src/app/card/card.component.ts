@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
+  image: string = '../assets/.../camera.png';
+  
   constructor() { }
 
   ngOnInit() {

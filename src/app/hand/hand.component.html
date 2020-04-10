@@ -1,3 +1,4 @@
+<img src="card/Celliera.png"/>
 <div *ngFor="let card of cards">
   <app-card 
     [name]="card.name"
@@ -6,5 +7,5 @@
     [image]="card.image"
   >
   </app-card>
-<img src="/assets/card/{{card.image}}">
+  <img src={{card.image}}>
 </div>

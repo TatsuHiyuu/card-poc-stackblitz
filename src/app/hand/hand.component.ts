@@ -4,7 +4,7 @@ import { cards } from '../data/cards';
 @Component({
   selector: 'app-hand',
   templateUrl: './hand.component.html',
-  styleUrls: ['./hand.component.css']
+  styleUrls: ['./hand.component.scss']
 })
 export class HandComponent implements OnInit {
   cards = cards;

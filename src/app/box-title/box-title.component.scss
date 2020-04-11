@@ -12,7 +12,13 @@ div.back-box {
     color: #fff;
     font-weight: bolder;
     text-align: center;
-    background-color: darkred;
+    background-image: linear-gradient(
+      90deg, 
+      red 70%, 
+      red 70%, 
+      darkred 30%, 
+      darkred 30%
+      );
   }
 }
 

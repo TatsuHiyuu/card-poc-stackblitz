@@ -4,7 +4,7 @@ import { BoxComponent } from '../box/box.component';
 @Component({
   selector: 'app-box-title',
   templateUrl: './box-title.component.html',
-  styleUrls: ['./box-title.component.scss']
+  styleUrls: ['./box-title.component.scss', '../../assets/style/background.scss']
 })
 export class BoxTitleComponent extends BoxComponent implements OnInit {
   @Input() theme: string;

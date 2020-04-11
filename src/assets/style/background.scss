@@ -1,0 +1,38 @@
+.dot {
+	// box-shadow: 2px 2px 5px;
+	filter: contrast(7);
+	--mask-before: linear-gradient(270deg, red, #{rgba(#000, .5)});
+  --mask-before-top: 0;
+  --mask-before-right: 30%;
+  --mask-before-bottom: 0;
+  --mask-before-left: 0;
+  --mask-before-color: maroon;
+	
+	&::before {
+    position: absolute;
+    top: var(--mask-before-top);
+    right: var(--mask-before-right);
+    bottom: var(--mask-before-bottom);
+    left: var(--mask-before-left);
+    background: 
+      radial-gradient(var((--mask-before-color)), transparent) 0 0/ 0.2em 0.2em space;
+    -webkit-mask: var(--mask-before);
+            mask: var(--mask-before);
+    content: '';
+  }
+
+	// &.double {
+	// 	--mask-before: linear-gradient(red, #{rgba(#000, .45)});
+  //   --mask-after: linear-gradient(#{rgba(#000, .45)}, red);
+
+  //   &::after {
+  //     position: absolute;
+  //     top: 60%; right: 0; bottom: 0; left: 0;
+  //     background: 
+  //       radial-gradient(#000, transparent) 0 0/ 0.8em 0.8em space;
+  //     -webkit-mask: var(--mask-after);
+  //             mask: var(--mask-after);
+  //     content: ''
+  //   }
+  // }
+}

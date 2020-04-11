@@ -3,11 +3,12 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-box',
   templateUrl: './box.component.html',
-  styleUrls: ['./box.component.scss']
+  styleUrls: ['../../assets/style/theme.scss', './box.component.scss']
 })
 export class BoxComponent implements OnInit {
-  @Input() text: string;
-  
+  @Input() protected text: string;
+  @Input() protected theme: string;
+
   constructor() {}
 
   ngOnInit() {

@@ -1,10 +1,26 @@
-div.back-box {
+@import '../../assets/style/theme.scss';
+
+div.box {
+  @include default-theme;
+
+  &.red-theme {
+    --theme-main-color: #D71933;
+    --theme-secondary-color: #942222;
+    --theme-background-color: #4D0F0E;
+  }
+
+  &.blue-theme {
+    --theme-main-color: #5FC2E5;
+    --theme-secondary-color: #2B689F;
+    --theme-background-color: #222C5B;
+  }
+
   padding: 0.4em 0;
   margin: 0 -1em;
-  background-color: crimson;
+  background-color: var(--theme-background-color);
   transform: skewY(-1deg);
 
-  div.box {
+  div.inner-box {
     padding: 0.2em;
     border-top: 0.1em solid #fff;
     border-bottom: 0.2em solid #fff;
@@ -13,12 +29,9 @@ div.back-box {
     font-weight: bolder;
     text-align: center;
     background-image: linear-gradient(
-      90deg, 
-      red 70%, 
-      red 70%, 
-      darkred 30%, 
-      darkred 30%
+      135deg,
+      var(--theme-main-color) 70%, 
+      var(--theme-secondary-color) 30%
       );
   }
 }
-

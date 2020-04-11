@@ -4,12 +4,15 @@ import { BoxComponent } from '../box/box.component';
 @Component({
   selector: 'app-box-title',
   templateUrl: './box-title.component.html',
-  styleUrls: ['./box-title.component.scss', '../../assets/style/background.scss']
+  styleUrls: ['../../assets/style/theme.scss', './box-title.component.scss']
 })
 export class BoxTitleComponent extends BoxComponent implements OnInit {
-  @Input() theme: string;
   
   ngOnInit() {
+  }
+
+  setClasses() {
+    return "box " + this.theme;
   }
 
 }

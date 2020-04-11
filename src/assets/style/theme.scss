@@ -2,12 +2,42 @@
   --theme-main-color: #7A7984;
   --theme-secondary-color: #6B6462;
   --theme-background-color: #312C32;
+  --theme-lightest-color: #fff;
 }
 
 @mixin red-theme {
-  
+  --theme-main-color: #D71933;
+  --theme-secondary-color: #942222;
+  --theme-background-color: #4D0F0E;
+  --theme-lightest-color: #fff;
 }
 
 @mixin blue-theme {
-  
+  --theme-main-color: #5FC2E5;
+  --theme-secondary-color: #2B689F;
+  --theme-background-color: #222C5B;
+  --theme-lightest-color: #fff;
+}
+
+@mixin pink-theme {
+  --theme-main-color: #FBDAEA;
+  --theme-secondary-color: #D0AFCA;
+  --theme-background-color: #D6829C;
+  --theme-lightest-color: #fff;
+}
+
+body {
+  @include default-theme();
+}
+
+.red-theme {
+  @include red-theme();
+}
+
+.blue-theme {
+  @include blue-theme();
+}
+
+.pink-theme {
+  @include pink-theme();
 }

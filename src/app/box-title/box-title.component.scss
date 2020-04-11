@@ -1,6 +1,18 @@
-div.box {
-  padding: 0.2em;
-  transform: skew(10deg);
-  border: 0.1em solid #000;
-  display: block;
+div.back-box {
+  padding: 0.4em 0;
+  margin: 0 -1em;
+  background-color: crimson;
+  transform: skewY(-1deg);
+
+  div.box {
+    padding: 0.2em;
+    border-top: 0.1em solid #fff;
+    border-bottom: 0.2em solid #fff;
+    transform: skewY(1deg);
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    background-color: darkred;
+  }
 }
+

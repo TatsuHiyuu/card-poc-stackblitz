@@ -31,7 +31,7 @@ body {
 }
 
 .default-theme {
-  @include red-theme();
+  @include default-theme();
 }
 
 .red-theme {

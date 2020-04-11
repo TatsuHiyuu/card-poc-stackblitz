@@ -32,7 +32,34 @@ export const cards = [
     might: 289,
     description: 'A young woman who trained with the Qilin tribe of Taiwu. She can be a little naive, but has firm beliefs when it comes to competitions and improving her martial-arts skills, and burns with a desire to become as strong as possible.',
     image: "https://gamepress.gg/dragalialost/sites/dragalialost/files/2019-01/Lin%20You-5-star.png",
-    position: "-25em -7em",
+    position: "-25em -8em",
     theme: "pink-theme"
+  },
+  {
+    id: 5,
+    name: 'Luca',
+    might: 302,
+    description: 'Wielding his friend\'s blade as a symbol of their promise and clad in gear forged from the hands of many races, Luca endeavors to create a world where no one has to fight.',
+    image: "https://gamepress.gg/dragalialost/sites/dragalialost/files/2020-01/v1100006_09_r05.png",
+    position: "-22em -14em",
+    theme: "default-theme"
+  },
+  {
+    id: 6,
+    name: 'Mym',
+    might: 604,
+    description: 'The Flamewyrm Brunhilda, who assumed a human form to be closer to her darling, the prince. Her love knows no bounds, and burns hotter than even her own fierce blazes.',
+    image: "https://gamepress.gg/dragalialost/sites/dragalialost/files/2019-05/Gala%20Mym-5-star.png",
+    position: "-16em -16em",
+    theme: "default-theme"
+  },
+  {
+    id: 7,
+    name: 'Yachiyo',
+    might: 198,
+    description: 'A glory-seeking samurai who speaks an old dialect. Based on advice from her grandfather, she seeks to achieve greatness by challenging a thousand warriors, but is now so skilled that none dare face her in combat.',
+    image: "https://gamepress.gg/dragalialost/sites/dragalialost/files/2019-05/Yachiyo-5-star.png",
+    position: "-22em -7em",
+    theme: "red-theme"
   }
 ];

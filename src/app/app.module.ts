@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -12,7 +13,7 @@ import { BoxComponent } from './box/box.component';
 import { BoxTitleComponent } from './box-title/box-title.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, DragDropModule ],
   declarations: [ AppComponent, HelloComponent, CardComponent, BoardComponent, AreaComponent, HandComponent, BoxComponent, BoxTitleComponent ],
   bootstrap:    [ AppComponent ]
 })

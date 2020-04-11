@@ -30,6 +30,10 @@ body {
   @include default-theme();
 }
 
+.default-theme {
+  @include red-theme();
+}
+
 .red-theme {
   @include red-theme();
 }

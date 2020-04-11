@@ -1,11 +1,18 @@
-<div class="hand" *ngFor="let card of cards">
-  <app-card 
+<div 
+  class="hand" 
+  cdkDropList
+  cdkDropListOrientation="horizontal"
+  (cdkDropListDropped)="drop($event)"
+>
+  <app-card
+    *ngFor="let card of cards"
     [name]="card.name"
     [might]="card.might"
     [description]="card.description"
     [image]="card.image"
     [position]="card.position"
     [theme]="card.theme"
+    cdkDrag
   >
   </app-card>
 </div>

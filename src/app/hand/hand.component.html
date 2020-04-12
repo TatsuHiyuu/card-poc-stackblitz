@@ -1,6 +1,9 @@
 <div 
-  class="hand" 
+  class="hand"
   cdkDropList
+  #hand="cdkDropList"
+  [cdkDropListData]="hand"
+  [cdkDropListConnectedTo]="[board]"
   cdkDropListOrientation="horizontal"
   (cdkDropListDropped)="drop($event)"
 >

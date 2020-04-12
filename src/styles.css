@@ -3,6 +3,6 @@ html, body {
 }
 
 body {
-  background: radial-gradient(#333, #111);
+  /* background: radial-gradient(#333, #111); */
   overflow: hidden;
 }

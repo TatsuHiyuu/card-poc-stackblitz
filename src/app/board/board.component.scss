@@ -1,0 +1,8 @@
+.board {
+  // background: radial-gradient(#333, #111);
+  height: 400px;;
+
+  &.cdk-drop-list {
+    background-color: purple;
+  }
+}

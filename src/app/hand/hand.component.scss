@@ -1,7 +1,27 @@
 .hand {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   overflow: hidden;
+  justify-content: center;
+
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+
+  $total: 7;
+  @for $i from 1 through (8 - 1) {
+    $rotationRange: 50;
+    $rotation: ($i - ($total - 1) / 2) / ($total - 2) * $rotationRange;
+    $offsetRange: 80;
+    $offset: abs(($i - ($total - 1) / 2) / ($total - 2) * $offsetRange);
+
+    .card:nth-child(#{$i + 1}) {
+      transform: translateY($offset * 1px) rotate($rotation * 1deg);
+    }
+  }
+}
+
+.card {
+  cursor: move;
 }
 
 .cdk-drag-preview {
@@ -14,7 +34,7 @@
 
 .cdk-drag-placeholder {
   opacity: 0;
-  width: 0;
+  // width: 0;
 }
 
 .cdk-drag-animating {

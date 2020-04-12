@@ -1,12 +1,13 @@
 .card {
   width: 200px;
   height: 300px;
+  padding: 1em;
+
   border: 0.1em solid #000;
   border-radius: 1em;
-  padding: 1em;
+
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: -20em -10em;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  cursor: move;
 }

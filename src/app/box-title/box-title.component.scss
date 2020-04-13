@@ -1,8 +1,8 @@
 @import '../../assets/style/theme.scss';
 
-div.box {
+div.outer-box {
   padding: 0.4em 0;
-  margin: 0 -1em;
+  margin: 0 -1em 1em;
   background-color: var(--theme-background-color);
   transform: skewY(-1deg);
 

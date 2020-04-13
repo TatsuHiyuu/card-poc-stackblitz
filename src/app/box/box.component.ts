@@ -6,8 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['../../assets/style/theme.scss', './box.component.scss']
 })
 export class BoxComponent implements OnInit {
-  @Input() protected text: string;
   @Input() protected theme: string;
+  @Input() protected text: string;
+  @Input() protected value: number;
 
   constructor() {}
 

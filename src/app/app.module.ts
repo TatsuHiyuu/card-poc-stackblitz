@@ -11,10 +11,11 @@ import { AreaComponent } from './area/area.component';
 import { HandComponent } from './hand/hand.component';
 import { BoxComponent } from './box/box.component';
 import { BoxTitleComponent } from './box-title/box-title.component';
+import { BoxDescriptionComponent } from './box-description/box-description.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, DragDropModule ],
-  declarations: [ AppComponent, HelloComponent, CardComponent, BoardComponent, AreaComponent, HandComponent, BoxComponent, BoxTitleComponent ],
+  declarations: [ AppComponent, HelloComponent, CardComponent, BoardComponent, AreaComponent, HandComponent, BoxComponent, BoxTitleComponent, BoxDescriptionComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

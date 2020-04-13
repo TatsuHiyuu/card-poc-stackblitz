@@ -6,3 +6,15 @@ body {
   /* background: radial-gradient(#333, #111); */
   overflow: hidden;
 }
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.2;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}

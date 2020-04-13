@@ -10,9 +10,4 @@ export class BoxTitleComponent extends BoxComponent implements OnInit {
   
   ngOnInit() {
   }
-
-  setClasses() {
-    return "box " + this.theme;
-  }
-
 }

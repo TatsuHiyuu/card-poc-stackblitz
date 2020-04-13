@@ -7,6 +7,27 @@
     [theme]="theme"
   >
   </app-box-title>
-  <!-- <app-box [text]="'Might: ' + might"></app-box> -->
-  <!-- <div class="description">{{ description }}</div> -->
+
+  <div class="checks">
+    <app-box
+      [text]="'Might'" 
+      [value]="might"
+      [theme]="theme"
+    >
+    </app-box>
+    <app-box
+      [text]="'Might'" 
+      [value]="might"
+      [theme]="theme"
+    >
+    </app-box>
+  </div>
+
+  <div class="description">
+    <app-box-description
+      [description]="description"
+      [theme]="theme"
+    >
+    </app-box-description>
+  </div>
 </div>

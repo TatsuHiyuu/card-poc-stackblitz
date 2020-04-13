@@ -17,7 +17,18 @@
   }
 
   .description {
+    // display: flex;
+    // flex-direction: column;
+    max-height: 7em;
+    background-color: #fff;
+
+    /* Required for text-overflow to do anything */
+    // white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: flex;
+    flex-direction: column;
   }
 }
 

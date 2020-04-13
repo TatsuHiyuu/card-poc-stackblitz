@@ -1,8 +1,8 @@
 .hand {
+  background-color: violet;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   overflow: hidden;
 
   position: fixed;
@@ -23,7 +23,7 @@
 
   app-card {
     cursor: move;
-    transform: scale(0.75, 0.75);
+    // transform: scale(0.75, 0.75);
   }
 }
 
